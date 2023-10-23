@@ -147,7 +147,7 @@ main {
     height: 90vw;
     width: 90vw;
     margin-bottom: 20px;
-    /* Maskes image a circle*/
+    /* Makes image a circle*/
     border-radius: 50%;
     max-width: 300px;
     max-height: 300px;
@@ -157,6 +157,30 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/*Meetup times section image*/
+#times {
+    background: url("../images/dublin-city.webp") no-repeat center/cover;
+    /* Handles respondivity without the need of meadia query*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#times > div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 15px;
+    text-align: center;
+    /* This will not wrap on screens less than 400px whide.
+    Each div will expand to fill acvaliable space on its row*/
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+
+/* Override the heading color set in general styles */
+#times h3 {
+    color: #fafafa;
 }
 
 /*Footer*/
@@ -233,6 +257,7 @@ main {
     text-align: end;
     align-self: flex-end;
 }
+
 
 /* Media query: lap top screens and larger (992px and up)*/
 @media screen and (min-width: 992px) {
