@@ -167,7 +167,7 @@ main {
     flex-wrap: wrap;
 }
 
-#times > div {
+#times div {
     color: #fafafa;
     background-color: rgba(0, 0, 0, .6);
     padding: 15px;
@@ -176,6 +176,8 @@ main {
     Each div will expand to fill acvaliable space on its row*/
     flex-basis: 200px;
     flex-grow: 1;
+    /* Creates a grid of meetup time divides over the backgraund image */
+    border: 2px solid white;
 }
 
 /* Override the heading color set in general styles */
