@@ -189,6 +189,16 @@ main {
     color: #fafafa;
 }
 
+/* Gallery page */
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+
+#photos {
+    line-height: 0;
+}
+
 /*Footer*/
 #social-networks {
     text-align: center;
@@ -202,6 +212,14 @@ main {
     font-size: 160%;
     padding: 5%;
     color: #3a3a3a;
+}
+
+/* Media query: large or landscape photos (567px and up)"*/
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    } 
 }
 
 /* Media query: tablets and largre (768 px and up)*/
@@ -244,25 +262,30 @@ main {
         width: 300px;
         right: 50px;
     }
-}
 
-/* Reasons section*/
-#benefits-physical,
-#benefits-mental {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
+    /* Reasons section*/
+    #benefits-physical,
+    #benefits-mental {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 
-#benefits-physical > div,
-#benefits-mental > div {
-    width: 75%;
-}
+    #benefits-physical > div,
+    #benefits-mental > div {
+        width: 75%;
+    }
 
-#benefits-mental > div {
-    text-align: end;
-    align-self: flex-end;
-}
+    #benefits-mental > div {
+        text-align: end;
+        align-self: flex-end;
+    }
+
+    /* Gallery */
+    #photos {
+        column-count: 3;
+    }
+}   
 
 
 /* Media query: lap top screens and larger (992px and up)*/
@@ -270,6 +293,11 @@ main {
     /*Heeader*/
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
+    }
+
+    /* Gallery */
+    #photos {
+        column-count: 4;
     }
 }
 
