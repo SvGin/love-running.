@@ -268,7 +268,7 @@ main {
 /* Media query: lap top screens and larger (992px and up)*/
 @media screen and (min-width: 992px) {
     /*Heeader*/
-    #menu a:hover{
+    #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
 }
@@ -276,9 +276,9 @@ main {
 /* Media query: lap top screens and larger 1200px*/
 @media screen and (min-width: 1200px) {
     /* Reasons secion image in the middle*/
-    #benefits{
+    #benefits {
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row;
     }
 
     #benefits > div {
@@ -286,7 +286,7 @@ main {
     }
 
      #benefits-image {
-        order: 0;
+        order: 0
      }
 
     #benefits-mental {
